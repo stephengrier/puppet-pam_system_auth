@@ -1,4 +1,4 @@
-# pam_system_auth
+# puppet-pam_system_auth
 
 #### Table of Contents
 
@@ -40,7 +40,7 @@ parameters.
  $session_entries = [
    'session     required      pam_unix.so',
  ]
- pam_system_auth {
+ class {'pam_system_auth':
    auth_entries     => $auth_entries,
    account_entries  => $account_entries,
    password_entries => $password_entries,
