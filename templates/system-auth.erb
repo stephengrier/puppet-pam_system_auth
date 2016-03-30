@@ -1,0 +1,18 @@
+# THIS FILE IS MANAGED BY PUPPET!!!
+# LOCAL CHANGES WILL BE LOST!!!
+
+<% @auth_entries.each do |auth_entry| -%>
+<%= auth_entry %>
+<% end -%>
+
+<% @account_entries.each do |account_entry| -%>
+<%= account_entry %>
+<% end -%>
+
+<% @password_entries.each do |password_entry| -%>
+<%= password_entry %>
+<% end -%>
+
+<% @session_entries.each do |session_entry| -%>
+<%= session_entry %>
+<% end -%>
